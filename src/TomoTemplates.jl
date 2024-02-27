@@ -5,6 +5,7 @@ using Reexport
 using FileIO: add_format, File, @format_str
 using FileIO
 using HDF5
+using UUIDs: UUID
 
 include("registry.jl")
 include("fileio.jl")
