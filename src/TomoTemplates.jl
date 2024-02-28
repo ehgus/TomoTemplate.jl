@@ -1,13 +1,14 @@
 module TomoTemplates
 
-using Reexport
-@reexport using FileIO: add_format
-using FileIO: add_format, File, @format_str
 using FileIO
 using HDF5
 using UUIDs: UUID
+export FileIO
 
-include("registry.jl")
 include("fileio.jl")
+include("filters.jl")
+function __init__()
+    include(joinpath(@__DIR__,"registry.jl"))    
+end
 
 end # module TomoTemplates
