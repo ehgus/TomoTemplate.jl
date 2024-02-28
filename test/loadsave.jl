@@ -1,11 +1,11 @@
-using TomoTemplates
+using TomoTemplate
 using FileIO
 
 save("test.tomoh5",Dict("hello"=>"world"),Dict("bye"=>rand(128,128,128)))
 (meta, data) = load("test.tomoh5")
 
 # compresion capability
-using TomoTemplates:Filters
+using TomoTemplate:Filters
 
 save("test_deflate.tomoh5",meta,data,chunk=(128,128,128),filters=Filters.Deflate())
 save("test_zstd-lv3.tomoh5",meta,data,chunk=(128,128,128),filters=Filters.ZstdFilter(3))

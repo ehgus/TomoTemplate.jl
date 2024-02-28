@@ -1,4 +1,4 @@
-module TomoTemplates
+module TomoTemplate
 
 using FileIO
 using HDF5
@@ -8,7 +8,7 @@ export FileIO
 include("fileio.jl")
 include("filters.jl")
 function __init__()
-    include(joinpath(@__DIR__,"registry.jl"))    
+    include(joinpath(@__DIR__,"registry.jl"))
 end
 
-end # module TomoTemplates
+end # module TomoTemplate

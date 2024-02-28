@@ -1,5 +1,5 @@
-name = "TomoTemplates"
-uuid = "7e1ec130-18a1-4273-abbb-9e85dadd9851"
+name = "TomoTemplate"
+uuid = "c4c57578-c03e-5b1b-b864-219221b2fcc7"
 authors = ["Dohyeon Lee <dleh428@kaist.ac.kr>"]
 version = "0.1.0"
 
